@@ -38,6 +38,7 @@ let seattle = {
 
     let articleElem= document.createElement('article');
     // articleElem.id = `${city}-article`;
+    articleElem.id= this.city;
     storeSection.appendChild(articleElem);
 
     let h2Elem = document.createElement('h2');
@@ -77,6 +78,7 @@ let tokyo =  {
 
     let articleElem = document.createElement('article');
     // articleElem.id = `${city}-article`;
+    articleElem.id= this.city;
     storeSection.appendChild(articleElem);
 
     let h2Elem = document.createElement('h2');
@@ -113,6 +115,7 @@ let dubai = {
   render: function() {
 
     let articleElem = document.createElement('article');
+    articleElem.id= this.city;
     storeSection.appendChild(articleElem);
 
     let h2Elem = document.createElement('h2');
@@ -149,6 +152,7 @@ let paris = {
   render: function() {
 
     let articleElem = document.createElement('article');
+    articleElem.id= this.city;
     storeSection.appendChild(articleElem);
 
     let h2Elem = document.createElement('h2');
@@ -185,8 +189,8 @@ let lima =  {
   render: function (){
 
     let articleElem = document.createElement('article');
-    storeSection.appendChild(articleElem);
     articleElem.id= this.city;
+    storeSection.appendChild(articleElem);
 
     let h2Elem = document.createElement('h2');
     h2Elem.textContent = this.city;
@@ -194,6 +198,7 @@ let lima =  {
 
     let ulElem = document.createElement('ul');
     articleElem.appendChild(ulElem);
+    ulElem.id = `${this.city}-list`;
 
     for (let i=0; i<hours.length; i++){
       let liElem= document.createElement('li');
