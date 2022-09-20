@@ -23,7 +23,7 @@ let seattle = {
   maxCustomer: 65,
   avgCookieSale: 6.3,
   cookiesSoldPerHour: [],
-  totalCookiesSales:[],
+  totalCookiesSales:0,
   getAvgCustHour: function () {
     return randomCustomer(23,65);
   },
@@ -69,7 +69,7 @@ let tokyo =  {
   maxCustomer: 24,
   avgCookieSale:1.2,
   cookiesSoldPerHour: [],
-  totalCookiesSales:[],
+  totalCookiesSales: 0,
   getAvgCustHour: function () {
     return randomCustomer(3, 24);
   },
@@ -114,7 +114,7 @@ let dubai = {
   maxCustomer: 38,
   avgCookieSale: 3.7,
   cookiesSoldPerHour: [],
-  totalCookiesSales:[],
+  totalCookiesSales:0,
   getAvgCustHour: function() {
     return randomCustomer(11, 38);
   },
@@ -159,7 +159,7 @@ let paris = {
   maxCustomer: 38,
   avgCookieSale: 2.3,
   cookiesSoldPerHour: [],
-  totalCookiesSales:[],
+  totalCookiesSales: 0,
   getAvgCustHour: function() {
     return randomCustomer(20, 38);
   },
@@ -204,7 +204,7 @@ let lima =  {
   maxCustomer: 16,
   avgCookieSale: 4.6,
   cookiesSoldPerHour:[],
-  totalCookiesSales:[],
+  totalCookiesSales: 0,
   getAvgCustHour: function () {
     return randomCustomer (2,16);
   },
