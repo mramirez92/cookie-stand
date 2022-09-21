@@ -1,15 +1,16 @@
 body{
-  background-color:rgb(198, 220, 227);
+  background-color:rgb(225, 229, 238);
   /* font-family: 'Poppins', sans-serif; */
   padding-top:0;
   border-top:0;
   border-width: 5vw;
-
+  background-image: url(patssalmon.png) ;
 }
+
 h1{
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(73, 87, 131);
   font-family: 'Poppins whgt:500', sans-serif;
-  color:rgb(48,94,123);
+  color:rgb(255, 255, 255);
   width: 100%;
   padding: 5vw;
   /* border: vw; */
@@ -22,39 +23,74 @@ h1{
 
 h2{
   font-family: 'Poppins whgt:400', sans-serif;
+  color:rgb(44, 53, 78);
+  padding: 1vw;
+  width:100;
+  margin: none;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(118, 123, 145)
+
   /* padding: 5vw; */
 }
 
-ul {
-  font-family: 'Poppins whgt:200', sans-serif;
-  background-color: rgb(255, 184, 163);
-  padding: vw;
-  margin: .8vw;
-  list-style:decimal;
-  /* border-left: 20px;
-  border-top: 20px;
-  margin-top:15px;
-  margin-bottom:15px;;
-  margin-left: 20px; */
-  /* text-align: justify; */
-  list-style: disc;
-}
-ul li::marker{
-  color:rgb(227, 133, 79);
+/* table{
+  background-color: blue;
 
-  padding-left:90px;
+} */
+
+table {
+  font-family: 'Poppins whgt:200', sans-serif;; 
+  /* border: 1px solid; */
+  color: rgb(44, 53, 78);
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  border-color: rgb(29, 35, 52);/*44, 53, 78*/
+  border-collapse: collapse;
+  border-style:solid;
+  border-width: 0.5px;
+
+
 }
-li{
-  padding: 0.5vw;
+
+#emptyHeader{
+  border-style: none;
+  border-color: none;
 }
+
+th{
+  background-color: rgb(247, 197, 159);
+  border: 1px solid;
+  border-width: 0.15vw;
+  border-collapse: collapse;
+  font-size: large;
+  padding: 15px;
+  border-width: 0.15px;
+
+  
+}
+
+td{
+  background-color: rgb(247, 251, 251);
+  border: 1px solid;
+  border-width: 0.15px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
 
 section{
-  
-  padding: 5vw;
-  background-color: rgb(252, 216, 161);
-  padding: 3vw;
+  padding: 2vw;
+  background-color: rgb(199, 204, 219);
+  /* padding: 3vw; */
   margin: 3vw;
-  border-color: orange;
+  max-width: 100%;
+  height: auto;
+  align-content: center;
+  border-radius: 15px;
+  /* border-width: 52px;
+  border-color: orange; */
   /* border:10px; */
 }
 
