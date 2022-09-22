@@ -1,26 +1,38 @@
 body{
-  background-color:rgb(225, 229, 238);
-  /* font-family: 'Poppins', sans-serif; */
+  
+  font-family: 'Poppins', sans-serif;
   padding-top:0;
   border-top:0;
-  border-width: 5vw;
-  background-image: url(patssalmon.png) ;
+  background-color:rgb(225, 229, 238); 
+  
 }
 
-h1{
+
+header{
+  
+  background-size: 30%;
+background-blend-mode:exclusion;
+  background-image: url('/img/salmon.png');
+  background-repeat: repeat;
   background-color: rgb(73, 87, 131);
   font-family: 'Poppins whgt:500', sans-serif;
   color:rgb(255, 255, 255);
   width: 100%;
-  padding: 5vw;
-  /* border: vw; */
+  padding: 2vw;
   margin: 0;
-  /* padding: 5vw;
-  border:5vw; */
   text-align: center;
+  border: 10px solid transparent;
+  padding: 15px;
+}
+
+nav{
+  align-items: center;
+  display: flex;
 
 }
 
+a{ font-size:large;
+color: white;}
 h2{
   font-family: 'Poppins whgt:400', sans-serif;
   color:rgb(44, 53, 78);
@@ -33,24 +45,63 @@ h2{
 
   /* padding: 5vw; */
 }
+#greeting{
+  display: flex;
+  flex-wrap: wrap;
+}
+#prettycookie{
+  border-radius: 25px;
+  opacity: 0.8;
+}
+section{
+  padding: 2vw;
+  background-color: rgb(199, 204, 219);
+  /* padding: 3vw; */
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  align-items: center; 
+  border-radius: 15px;
+  display:flex;
+  justify-content: center; 
 
-/* table{
-  background-color: blue;
+}
 
-} */
+#stores{
+  display: flex;
+  flex-direction:row;
+  -ms-flex-item-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+#storeinfo{
+  padding: 10px;
+  border: 5px;
+  background-color: rgb(225, 229, 238);
+  border-style:hidden;
+  border-radius: 25px;
+  display: flex;
+  justify-items: space-around;
+  
+}
+
+}
+
 
 table {
   font-family: 'Poppins whgt:200', sans-serif;; 
   /* border: 1px solid; */
   color: rgb(44, 53, 78);
-  max-width: 100%;
+  width: 60vw;
   height: auto;
   border-radius: 15px;
   border-color: rgb(29, 35, 52);/*44, 53, 78*/
   border-collapse: collapse;
   border-style:solid;
   border-width: 0.5px;
-
+ text-align: center;
 
 }
 
@@ -80,17 +131,4 @@ td{
 }
 
 
-section{
-  padding: 2vw;
-  background-color: rgb(199, 204, 219);
-  /* padding: 3vw; */
-  margin: 3vw;
-  max-width: 100%;
-  height: auto;
-  align-content: center;
-  border-radius: 15px;
-  /* border-width: 52px;
-  border-color: orange; */
-  /* border:10px; */
-}
 
