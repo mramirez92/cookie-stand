@@ -1,17 +1,11 @@
 body{
-  
-  font-family: 'Poppins', sans-serif;
-  padding-top:0;
-  border-top:0;
-  background-color:rgb(225, 229, 238); 
-  
+  background-color: rgb(225, 229, 238);
+  font-family: 'Poppins whgt:500', sans-serif;
 }
-
-
 header{
   
   background-size: 30%;
-background-blend-mode:exclusion;
+  background-blend-mode:exclusion;
   background-image: url('/img/salmon.png');
   background-repeat: repeat;
   background-color: rgb(73, 87, 131);
@@ -20,19 +14,52 @@ background-blend-mode:exclusion;
   width: 100%;
   padding: 2vw;
   margin: 0;
+  margin-bottom:  30px;
+  display:block;
   text-align: center;
-  border: 10px solid transparent;
-  padding: 15px;
 }
+
 
 nav{
-  align-items: center;
+  width: 960px;
+  margin: auto;
+  align-content: center;
   display: flex;
-
+  
 }
 
-a{ font-size:large;
-color: white;}
+a{
+  font-size: large;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+a:hover{
+  color: rgb(247, 197, 159);
+}
+
+main{
+  width:1000px;
+  margin: auto;
+  
+}
+
+section{
+  max-width: 1000px;
+  /* padding-bottom: 30px;
+  padding-top: 30px; */
+  padding: 30px;
+  display:flex;
+  background-color: rgb(199, 204, 219);
+  margin: 0 auto;
+  height: auto;
+  align-items: center; 
+  border-radius: 15px;
+  justify-content: center; 
+  
+}  
+
+
 h2{
   font-family: 'Poppins whgt:400', sans-serif;
   color:rgb(44, 53, 78);
@@ -42,29 +69,17 @@ h2{
   text-align: center;
   align-items: center;
   background-color: rgb(118, 123, 145)
-
+  
   /* padding: 5vw; */
 }
 #greeting{
   display: flex;
   flex-wrap: wrap;
+  padding: 30px;
 }
 #prettycookie{
   border-radius: 25px;
   opacity: 0.8;
-}
-section{
-  padding: 2vw;
-  background-color: rgb(199, 204, 219);
-  /* padding: 3vw; */
-  margin: 0 auto;
-  width: 90%;
-  height: auto;
-  align-items: center; 
-  border-radius: 15px;
-  display:flex;
-  justify-content: center; 
-
 }
 
 #stores{
@@ -73,7 +88,7 @@ section{
   -ms-flex-item-align: center;
   justify-content: space-evenly;
   align-items: center;
-
+  
 }
 
 #storeinfo{
@@ -87,8 +102,24 @@ section{
   
 }
 
+ul{
+  list-style: none;
+  align-items: center;
 }
 
+li{
+  padding: 5px;
+}
+p{
+  overflow: auto;
+  height:200px;
+}
+article{
+  padding-left: 50px;}
+
+
+  
+/*sales table*/
 
 table {
   font-family: 'Poppins whgt:200', sans-serif;; 
