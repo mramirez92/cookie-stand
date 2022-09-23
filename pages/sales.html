@@ -12,16 +12,38 @@
 
 <body>
   <header>
-    <h1>Daily Store Cookie Sales</h1>
+    <h1>Daily Cookie Stand Sales</h1>
     <nav>
-      <a href="index.html">Homepage</a>
+      <a href= "index.html">Homepage</a>
     </nav>
   </header>
   <main>
+    <section id="formSec">
+      <form id = "myForm"> 
+        <fieldset>
+          <legend>New Cookie Stand</legend>
+
+          <label for="city">City</label>
+            <input id ="city" type="text" name="city">
+
+          <label for="minCust">Min. Hourly Customers</label>
+            <input id ="minCust" type="text" name="minCust">
+
+          <label for="maxCust">Max. Hourly Customers</label>
+            <input id ="maxCust" type="text" name="maxCust">
+
+          <label for="avgCookie">Average Cookie Per Sale</label>
+            <input id ="avgCookie" type="" name="avgCookie">
+            </fieldset>
+          <button type="submit">Submit</button>
+      </form>
+    </section>
+
     <h2>Hourly Sales</h2>
     <section id="container">
       <div id = "stores">
-      <table id="cities"></table>
+      <table id="cities">
+      </table>
     </div>
       </section>
     </section>
