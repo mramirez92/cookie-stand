@@ -118,48 +118,92 @@ article{
   padding-left: 50px;}
 
 
+input:invalid {
+    
+  box-shadow: 0 0 2px 1px #FF9C80;
+}
   
 /*sales table*/
 
 table {
-  font-family: 'Poppins whgt:200', sans-serif;; 
-  /* border: 1px solid; */
+  font-family: 'Poppins whgt:200', sans-serif;
   color: rgb(44, 53, 78);
   width: 60vw;
   height: auto;
-  border-radius: 15px;
-  border-color: rgb(29, 35, 52);/*44, 53, 78*/
-  border-collapse: collapse;
-  border-style:solid;
-  border-width: 0.5px;
- text-align: center;
+  border:solid  rgb(29, 35, 52) 1px;
+  border-radius: 10px;
+  background-color: rgb(29, 35, 52);
+  text-align: center;
 
 }
 
 #emptyHeader{
   border-style: none;
-  border-color: none;
+  border-color: none; 
 }
 
-th{
+* th{
   background-color: rgb(247, 197, 159);
-  border: 1px solid;
-  border-width: 0.15vw;
+  border-left:solid rgb(29, 35, 52);
+  border-top:solid rgb(29, 35, 52);
   border-collapse: collapse;
   font-size: large;
   padding: 15px;
-  border-width: 0.15px;
+  border-width: 0.15px;}
 
-  
+#totalHF{
+ border-bottom-left-radius: 10px ;
+}
+
+#emptyHeader{
+  border-top-left-radius: 10px
+}
+
+#dailyTH{
+  border-top-right-radius: 10px;
+}
+
+/* th:last-of-type {
+  border-top-right-radius: 10px;
+} */
+
+tfoot>tr>td:last-of-type{
+  border-bottom-right-radius:10px;
 }
 
 td{
-  background-color: rgb(247, 251, 251);
-  border: 1px solid;
+  background-color: #ffffff;
+  border: .5px solid;
   border-width: 0.15px;
   border-collapse: collapse;
-  text-align: center;
+  text-align: center; 
+  /* border-radius: 15px; */
+} 
+
+tfoot{
+  border-width: .15px;}
+
+/* form styling*/
+
+form{
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color:#f2f3f8; 
 }
 
 
+fieldset{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
 
+label{
+  padding: 15px;
+}
+input{
+  border-radius: 5px;
+}
