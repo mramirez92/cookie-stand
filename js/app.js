@@ -4,7 +4,6 @@
 let hours = ['6am', '7am', '8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm', '7pm'];
 
 let storeSales = [];
-let hourTotal = [];
 
 let storeSection = document.getElementById('storeSales');
 let tableElem = document.getElementById('cities');
@@ -24,6 +23,8 @@ function handleSubmit(event){
   newCity.getAvgCustHour();
   newCity.getCookieSales();
   newCity.render();
+  standForm.reset();
+  tableFooter.textContext = '';
 }
 // *** ATTACH EVENT LISTENER ***
 standForm.addEventListener('submit', handleSubmit);
@@ -55,15 +56,15 @@ Store.prototype.getCookieSales = function (){
     let custThisHour= this.getAvgCustHour();
     this.cookiesSoldPerHour.push(
       Math.floor(custThisHour*this.avgCookieSale));
-      this.totalCookiesSales += this.cookiesSoldPerHour[i];
-    }
+    this.totalCookiesSales += this.cookiesSoldPerHour[i];
+  }
 };
-  
-  Store.prototype.render= function (){
+
+Store.prototype.render= function (){
   let cityBody = document.createElement('tbody');
   cityBody.id = 'cityBody';
   tableElem.appendChild(cityBody);
-    
+
   let cityRow= document.createElement('tr');
   cityBody.appendChild(cityRow);
 
@@ -71,16 +72,15 @@ Store.prototype.getCookieSales = function (){
   cityHeader.textContent= this.city;
   cityRow.appendChild(cityHeader);
 
-  //creating table data cell for every iteration  of that is loops, adding those items it loops through as text context for td. appending td element to our cityrow.
   for (let i=0; i <hours.length; i++){
     let tdElem = document.createElement('td');
     tdElem.textContent = this.cookiesSoldPerHour[i];
     cityRow.appendChild (tdElem);
-    
-  }
 
+  }
   let tdDailyTotal = document.createElement('td');
   tdDailyTotal.textContent=this.totalCookiesSales;
+  tdDailyTotal.id= 'tdDailyTotal';
   cityRow.appendChild(tdDailyTotal);
 };
 
@@ -105,6 +105,7 @@ function tableHeader(){
 
   let dailyTotal = document.createElement('th');
   dailyTotal.textContent = 'Daily Location total';
+  dailyTotal.id= 'dailyTH'
   hoursRow.appendChild(dailyTotal);
 }
 
@@ -118,9 +119,10 @@ function tableFooter () {
   let totalRow =  document.createElement ('tr');
   cityFooter.appendChild(totalRow);
 
-  let totalTd = document.createElement ('td');
-  totalTd.textContent = 'Totals';
-  totalRow.appendChild (totalTd);
+  let totalTh = document.createElement ('th');
+  totalTh.id ='totalHF';
+  totalTh.textContent = 'Totals';
+  totalRow.appendChild (totalTh);
 
   let grandTotal= 0;
 
@@ -152,7 +154,7 @@ function renderAll (){
 new Store ('Seattle', 23, 65, 6.3);
 new Store ('Tokyo', 3, 24, 1.2);
 new Store ('Dubai', 11, 38, 3.7);
-new Store ('Paris', 20, 38, 2.3); 
+new Store ('Paris', 20, 38, 2.3);
 new Store ('Lima', 2, 16, 4.6);
 
 tableHeader();
