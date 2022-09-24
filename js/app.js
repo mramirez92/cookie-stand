@@ -12,6 +12,7 @@ let standForm = document.getElementById('myForm');
 console.dir(storeSection);
 
 //  *** define callback ***
+
 function handleSubmit(event){
   event.preventDefault();
   let city = event.target.city.value;
@@ -26,8 +27,10 @@ function handleSubmit(event){
   standForm.reset();
   tableFooter.textContext = '';
 }
+
 // *** ATTACH EVENT LISTENER ***
 standForm.addEventListener('submit', handleSubmit);
+
 
 // *** HELPER FUNCTIONS ***
 
@@ -105,7 +108,7 @@ function tableHeader(){
 
   let dailyTotal = document.createElement('th');
   dailyTotal.textContent = 'Daily Location total';
-  dailyTotal.id= 'dailyTH'
+  dailyTotal.id= 'dailyTH';
   hoursRow.appendChild(dailyTotal);
 }
 
