@@ -1,119 +1,150 @@
 body{
   background-color: rgb(225, 229, 238);
   font-family: 'Poppins whgt:500', sans-serif;
+  margin:0;
 }
 header{
   
   background-size: 30%;
   background-blend-mode:exclusion;
-  background-image: url('/img/salmon.png');
+  background-image: url('/img/salmon.png') ;
   background-repeat: repeat;
   background-color: rgb(73, 87, 131);
   font-family: 'Poppins whgt:500', sans-serif;
   color:rgb(255, 255, 255);
-  width: 100%;
-  padding: 2vw;
-  margin: 0;
-  margin-bottom:  30px;
-  display:block;
+  padding:50px;
   text-align: center;
+  font-weight: 500px;
 }
 
 
 nav{
-  width: 960px;
-  margin: auto;
   align-content: center;
   display: flex;
   
 }
 
 a{
+  padding:10px 15px;
   font-size: large;
   text-decoration: none;
   color: rgb(255, 255, 255);
+  
+}
+a:link, a:visited {
+  background-color: rgb(247, 197, 159);
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: center;
+  border-radius: 50px;
+}
+
+a:hover, a:active {
+  background-color: white;
+
 }
 
 a:hover{
-  color: rgb(247, 197, 159);
+  color: rgb(45, 54, 101);
 }
+
 
 main{
-  width:1000px;
-  margin: auto;
+  flex: 100%;
+  padding: 25px;
   
 }
-
-section{
-  max-width: 1000px;
-  /* padding-bottom: 30px;
-  padding-top: 30px; */
-  padding: 30px;
-  display:flex;
-  background-color: rgb(199, 204, 219);
-  margin: 0 auto;
-  height: auto;
-  align-items: center; 
-  border-radius: 15px;
-  justify-content: center; 
-  
-}  
-
 
 h2{
+  display: block;
+  border-radius: 35px;
   font-family: 'Poppins whgt:400', sans-serif;
   color:rgb(44, 53, 78);
-  padding: 1vw;
-  width:100;
-  margin: none;
-  text-align: center;
-  align-items: center;
-  background-color: rgb(118, 123, 145)
-  
-  /* padding: 5vw; */
-}
-#greeting{
-  display: flex;
-  flex-wrap: wrap;
   padding: 30px;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(119, 125, 146);
+  width:100px;
+  margin: 10px
+}
+
+#greeting{
+  display: block;
+  display: flex; 
+   /* flex-wrap: wrap; */
+  padding: 30px;
+  font-size: large;
 }
 #prettycookie{
-  border-radius: 25px;
-  opacity: 0.8;
+  opacity: 0.8; 
+  border-radius: 30px;
+  flex-wrap: wrap;
 }
+section{
+  background-color: rgb(199, 204, 219); 
+  border-radius: 40px;
+  border: 10px;
+  padding: 10px;
+  margin: 30px 0px 30px ;
+  padding: 30px; 
+  justify-content: center;  
+}   
 
 #stores{
-  display: flex;
-  flex-direction:row;
-  -ms-flex-item-align: center;
-  justify-content: space-evenly;
-  align-items: center;
-  
+  display:flex;
 }
-
 #storeinfo{
-  padding: 10px;
-  border: 5px;
+  padding: 30px;
+  margin: 15px;
   background-color: rgb(225, 229, 238);
   border-style:hidden;
-  border-radius: 25px;
-  display: flex;
-  justify-items: space-around;
-  
+  border-radius: 25px; 
 }
+
 
 ul{
   list-style: none;
   align-items: center;
+  padding: 10px;
+
 }
 
 li{
   padding: 5px;
 }
-p{
-  overflow: auto;
-  height:200px;
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 2px dotted black;
 }
+
+.tooltip .tooltiptext {
+  visibility:hidden;
+  width: 120px;
+  background-color: rgb(73, 87, 131);
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px 0;
+  list-style-type:none;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+#images{
+
+  display:flex;
+  flex-direction: row;
+  align-content:center;
+  flex-wrap: wrap;
+}
+
 article{
   padding-left: 50px;}
 
@@ -122,7 +153,16 @@ input:invalid {
     
   box-shadow: 0 0 2px 1px #FF9C80;
 }
+
+img{ 
+  /* max-width:fit-content;
+  max-height: min-content; */
+  border-radius:30px;
+  padding: 15px;
+  width:400px;
+height: auto;
   
+}
 /*sales table*/
 
 table {
@@ -206,4 +246,13 @@ label{
 }
 input{
   border-radius: 5px;
+}
+
+footer{
+  background-color: rgb(73, 87, 131);
+  font-family: 'Poppins whgt:200', sans-serif;
+  color:rgb(255, 255, 255);
+  padding:50px;
+  text-align: center;
+  font-weight: 300px;
 }
